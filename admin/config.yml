@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+# when using the default proxy server port
+local_backend: true
+media_folder: assets/uploads/
+collections:
+  - label: "Global"
+    name: "global"
+    files:
+      - label: "Movies List"
+        name: "movies"
+        file: "_data/moviesda.yml"
+        fields:
+          - label: Films
+            name: platform
+            widget: list
+            add_to_top: true
+            fields:
+              - {label: Name, name: name, widget: string, required: false }
+              - {label: Download, name: download, widget: string, required: false }
+              - {label: Torrent, name: torrent, widget: string, required: false }
+              - { name: date, label: Date, widget: datetime, required: false  }
+ 

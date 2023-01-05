@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{{site.title}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="{{page.description}}{{site.description}}" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="theme-color" content="#efbacc"/>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <style type="text/css">
+body {padding: 0; margin:0 auto; max-width: 730px; font-family: 'Inter', 'Noto Sans Tamil', sans-serif; background: #f9f9f9; font-size: 14px;}
+.line{background-color: #308bcf; color: #ffffff; font-weight: bold; padding: 10px 10px 10px 10px; text-align: center; text-decoration: none; margin-bottom: 0px;}
+
+/* Paging nav */
+.col-12 .paging-nav{
+ width:100% !important;
+ min-width:0px;
+ text-align:center;
+ letter-spacing:0.2px;
+ word-spacing:-1px;
+ line-height:1.8em;
+ font-size:13px;
+ font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+ text-transform:capitalize;
+ padding-top:0px;
+ margin-top:10px;
+ margin-bottom:10px;
+}
+
+/* Link */
+.col-12 .paging-nav a{
+ background-color:#3b3b3f;
+}
+
+
+
+.paging-nav {
+  text-align: right;
+  padding-top: 2px;
+}
+
+.paging-nav a {
+  margin: auto 1px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1px 7px;
+  background: #91b9e6;
+  color: white;
+  border-radius: 3px;
+}
+
+.paging-nav .selected-page {
+  background: #187ed5;
+  font-weight: bold;
+}
+
+.paging-nav,
+#tableData {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="https://moviesda3.com/style.css?v=2" media="all,handheld"/>
+
+<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="line">
+        <font size="4px">{{site.title}}</font>
+        <br>
+        <small>Name Of Quality</small>
+      </div>
+      <div class="bottom" align="center">Like our <a href="/"><font color="red">Facebook Fan Page</font></a> &amp; Get Updates and News!
+        <div class="ads">
+          
+          <input id="myInput" type="text" placeholder="Search..">
+
+        </div>
+        
+        </div>
+        
+    {{ content }}
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="{{site.url}}/paging.js"></script>
+
+    <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#tableData').paging({limit:20});
+                });
+                $(document).ready(function () {
+  $('#tableData').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
+// Basic example
+$(document).ready(function () {
+  $('#tableData').DataTable({
+    "searching": false // false to disable search (or any other option)
+  });
+  $('.dataTables_length').addClass('bs-select');
+});
+            </script>
+            <div class="aut">Page Tags :</div>
+            <div class="Tag"><font color="green">Moviesda 2023 Movies Download Moviesda HD Movies Download, Tamilrockers 2023 Movies Download, Isaimini 2023 Movies Download, Tamilyogi 2023 Movies Download, Tamilgun 2023 Movies Download, Tamilmv 2023 Movies Download</font></div>
+            <div class="bottom">
+              <a href="/">Home</a></a>
+              </div>
+            <div class="line"> © {{site.title}} <br> All Right Reserved </div>
+</body>
+</html>
