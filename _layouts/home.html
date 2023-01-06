@@ -51,9 +51,9 @@ layout: default
         {% endif %}
             </td>
 
-        <td>
+        <td class="dbtn">
           
-          <a class="dbtn btn btn-success {% if file.download %}{% else %}disabled{% endif %}" href="/download.html?file={{file.name}}&amp;link={{file.download}}">Download</a>        
+          <a class="btn btn-success {% if file.download %}{% else %}disabled{% endif %}" href="/download.html?file={{file.name}}&amp;link={{file.download}}">Download</a>        
         </td>
       </tr>
       {% endfor %}
