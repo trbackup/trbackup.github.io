@@ -32,7 +32,7 @@ layout: default
       {% for file in site.data.moviesda.platform %}
       <tr>
         <td>{{file.name}}</td>
-        <td>
+        <td class="tbtn">
           
           {% if file.torrent %}
           <a href="{{file.torrent}}">
@@ -53,7 +53,7 @@ layout: default
 
         <td>
           
-          <a class="btn btn-success {% if file.download %}{% else %}disabled{% endif %}" href="/download.html?file={{file.name}}&amp;link={{file.download}}">Download</a>        
+          <a class="dbtn btn btn-success {% if file.download %}{% else %}disabled{% endif %}" href="/download.html?file={{file.name}}&amp;link={{file.download}}">Download</a>        
         </td>
       </tr>
       {% endfor %}
